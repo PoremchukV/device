@@ -4,11 +4,44 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style/device.css">
+    <title>Sticky</title>
 </head>
 
 <body>
-    <p>vhbdfjbvhfbjv</p>
+
+    <div class="container">
+        <div class="container__header">
+            <div class="header__logo">
+                <img src="./images/logo.png" alt="Логотип">
+            </div>
+        </div>
+
+        <div class="container__navigation">
+            <div class="navigation">
+                <div class="navigation__search">
+                    <form action="" method="GET" class="search">
+                        <input type="image" class="search__button" src='./images/search_button.png' />
+                        <input type="text" class="search__field" placeholder="Поиск по сайту" />
+                    </form>
+                </div>
+                <div class="navigation__account" id="myModal">
+                    <form action="" method="GET" class="account">
+                        <input type="image" class="user__button" src='./images/user.png' />
+                        <input type="text" class="user__field" placeholder="Войти" />
+                    </form>
+                </div>
+                <div class="navigation__compare">
+                    <img src="./images/compare.png" alt="" srcset="">
+                    <span class="compare">Сравнить</span>
+                </div>
+                <div class="navigation__carts">
+                    <img src="./images/cart.png" alt="" srcset="">
+                    <span class="cart">Корзина</span>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
 
