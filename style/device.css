@@ -1,84 +1,98 @@
 @font-face {
   font-family: "Open Sans";
+  font-weight: 300;
+  font-style: normal;
   src: url("../fonts/web/opensanslight.woff2") format("woff2"),
     url("../fonts/web/opensanslight.woff") format("woff");
+}
+@font-face {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/web/opensans.woff2") format("woff2"),
+    url("../fonts/web/opensans.woff") format("woff");
 }
 
 body {
   margin: 0;
-  background-image: url(../maket/preview/device-index.jpg);
+  /* background-image: url(../maket/preview/device-index.jpg);
   opacity: 0.5;
   background-repeat: no-repeat;
-  background-position: top center;
+  background-position: top center; */
   font-family: "Open Sans";
+  font-weight: 300;
 }
-.container {
-  width: 1160px;
-  margin: 0 auto;
-}
-.container__header {
-  margin-left: 59px;
-  margin-top: 20px;
-}
-.header__logo :hover {
-  opacity: 60%;
-}
-.header__logo :active {
-  opacity: 30%;
-}
-
-.container__navigation {
-  /* width: 1000px; */
-  background-color: #f0c52e;
-  margin-top: -21px;
-  height: 299px;
+.logo {
+  position: absolute;
+  transform: translate(36%, -47%);
 }
 .navigation {
-  width: 1045px;
+  width: 1160px;
+  height: 299px;
+  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0;
+  background-color: #f8e295;
+  position: relative;
+  margin-top: 40px;
+}
+.menu {
+  width: 1050px;
+  height: 88px;
+  margin: 0 auto;
   display: flex;
-  flex-direction: row;
+  padding-top: 47px;
 }
-
-.search__button {
-  background-repeat: no-repeat;
-  background-size: contain;
-  border: 0;
-  text-decoration: none;
-  padding: 0;
-}
-.navigation__search {
-  padding-top: 4px;
-}
-
-/* button of navigation */
 .search__field {
   border: 0;
   background: none;
-  font-size: 15px;
   opacity: 30%;
-  padding-left: 10px;
-  font-size: 11pt;
-  font-weight: 300;
+  padding-left: 4px;
 }
-.user__field {
-  border: 0;
+.user__text,
+.compare__text,
+.cart__text {
+  padding-left: 4px;
+}
+.search,
+.search__icon,
+.goods,
+.user,
+.compare,
+.cart,
+.delivery_btn,
+.guarantee_btn,
+.contact_btn {
   background: none;
-  font-size: 15px;
-  font-family: "Open Sans";
-  padding-left: 10px;
-  font-size: 11pt;
-  font-weight: 300;
+  border: 0;
 }
-.compare {
-  padding-left: 10px;
-  font-size: 11pt;
-  font-weight: 300;
+.goods__text,
+.delivery__text,
+.guarantee__text,
+.contact__text {
+  text-transform: uppercase;
 }
-.cart {
-  padding-left: 10px;
-  font-size: 11pt;
-  font-weight: 300;
+.col-1 {
+  width: 50%;
 }
-/* button of navigation */
+
+.col-2 {
+  width: 50%;
+}
+.col-3 {
+  display: flex;
+}
+.account {
+  flex-grow: 1;
+}
+
+.col-4 {
+  display: flex;
+  padding-top: 50px;
+}
+.contact {
+  flex-grow: 1;
+  text-align: end;
+}
+.catalog {
+  padding-top: 50px;
+}

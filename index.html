@@ -10,39 +10,77 @@
 
 <body>
 
-    <div class="container">
-        <div class="container__header">
-            <div class="header__logo">
-                <img src="./images/logo.png" alt="Логотип">
+
+
+
+    <div class="navigation">
+        <div class="logo">
+            <img src="./images/logo.png" alt="Логотип">
+        </div>
+        <div class="menu">
+            <div class="col-1">
+                <div class="search">
+                    <form action="" method="GET" id="modal-search">
+                        <button class="search__icon">
+                            <img src="./images/search_button.png" alt="icon of search">
+                        </button>
+                        <input type="text" name='search-btn' class="search__field" placeholder="Поиск по сайту" />
+                    </form>
+                </div>
+                <div class="catalog">
+                    <button class="goods">
+                        <span class="goods__text">Каталог товаров</span>
+                        <span class="goods__icon">
+                            <img src="./images/plus.png" alt="icon of cart">
+                        </span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="col-3">
+                    <div class="account" id="modal-navigation">
+                        <button class="user">
+                            <span class="user__icon">
+                                <img src='./images/user.png' alt="icon of log in">
+                            </span>
+                            <span class="user__text">Войти</span></button>
+                    </div>
+                    <div class="equate">
+                        <button class="compare">
+                            <span class="compare__icon">
+                                <img src="./images/compare.png" alt="icon of compare">
+                            </span>
+                            <span class="compare__text">Сравнить</span></button>
+                    </div>
+                    <div class="buy">
+                        <button class="cart">
+                            <span class="cart__icon">
+                                <img src="./images/cart.png" alt="icon of cart">
+                            </span>
+                            <span class="cart__text">Корзина</span></button>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="delivery">
+                        <button class="delivery_btn">
+                            <span class="delivery__text">Доставка</span>
+                        </button>
+                    </div>
+                    <div class="guarantee">
+                        <button class="guarantee_btn">
+                            <span class="guarantee__text">Гарантия</span>
+                        </button>
+                    </div>
+                    <div class="contact">
+                        <button class="contact_btn">
+                            <span class="contact__text">Контакты</span>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <div class="container__navigation">
-            <div class="navigation">
-                <div class="navigation__search">
-                    <form action="" method="GET" class="search">
-                        <input type="image" class="search__button" src='./images/search_button.png' />
-                        <input type="text" class="search__field" placeholder="Поиск по сайту" />
-                    </form>
-                </div>
-                <div class="navigation__account" id="myModal">
-                    <form action="" method="GET" class="account">
-                        <input type="image" class="user__button" src='./images/user.png' />
-                        <input type="text" class="user__field" placeholder="Войти" />
-                    </form>
-                </div>
-                <div class="navigation__compare">
-                    <img src="./images/compare.png" alt="" srcset="">
-                    <span class="compare">Сравнить</span>
-                </div>
-                <div class="navigation__carts">
-                    <img src="./images/cart.png" alt="" srcset="">
-                    <span class="cart">Корзина</span>
-                </div>
-            </div>
-        </div>
     </div>
-
 </body>
 
 </html>
