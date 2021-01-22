@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style/device.css">
-    <title>Sticky</title>
+    <title>Device</title>
 </head>
 
 <body>
@@ -13,74 +13,125 @@
 
 
 
-    <div class="navigation">
+    <div class="navigation container">
         <div class="logo">
-            <img src="./images/logo.png" alt="Логотип">
+            <a href="#"><img src="./images/logo.png" alt="Логотип"></a>
         </div>
         <div class="menu">
-            <div class="col-1">
+            <div class="menu__cell">
                 <div class="search">
                     <form action="" method="GET" id="modal-search">
-                        <button class="search__icon">
+                        <button class="btn__icon btn">
                             <img src="./images/search_button.png" alt="icon of search">
                         </button>
-                        <input type="text" name='search-btn' class="search__field" placeholder="Поиск по сайту" />
+                        <input type="text" name='search-btn' class="btn btn__text " placeholder="Поиск по сайту" />
                     </form>
                 </div>
                 <div class="catalog">
-                    <button class="goods">
-                        <span class="goods__text">Каталог товаров</span>
-                        <span class="goods__icon">
+                    <a href="" class="link">Каталог товаров</a>
+                    <span class="btn__icon">
+                        <a href="#" id="c-menu">
                             <img src="./images/plus.png" alt="icon of cart">
-                        </span>
-                    </button>
+                        </a>
+                        <!-- <ul class="submenu container">
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Виртуальная реальность</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Моноподы для селфи</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Экшн-камеры</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Фитнес-браслеты</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Умные часы</a>
+                            </li>
+                            <li class="submenu__item">
+                                <a href="#" class="submenu__link">Квадрокоптеры</a>
+                            </li>
+                        </ul> -->
+                    </span>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="col-3">
+            <div class="menu__cell">
+                <div class="menu__row">
                     <div class="account" id="modal-navigation">
-                        <button class="user">
-                            <span class="user__icon">
+                        <button class="btn">
+                            <span class="btn__icon">
                                 <img src='./images/user.png' alt="icon of log in">
                             </span>
-                            <span class="user__text">Войти</span></button>
+                            <span class="btn__text">Войти</span>
+                        </button>
                     </div>
-                    <div class="equate">
-                        <button class="compare">
-                            <span class="compare__icon">
+                    <div class="compare">
+                        <button class="btn">
+                            <span class="btn__icon">
                                 <img src="./images/compare.png" alt="icon of compare">
                             </span>
-                            <span class="compare__text">Сравнить</span></button>
+                            <span class="btn__text">Сравнить</span></button>
                     </div>
-                    <div class="buy">
-                        <button class="cart">
-                            <span class="cart__icon">
+                    <div class="cart">
+                        <button class="btn">
+                            <span class="btn__icon">
                                 <img src="./images/cart.png" alt="icon of cart">
                             </span>
-                            <span class="cart__text">Корзина</span></button>
+                            <span class="btn__text">Корзина</span>
+                        </button>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="menu__row">
                     <div class="delivery">
-                        <button class="delivery_btn">
-                            <span class="delivery__text">Доставка</span>
-                        </button>
+                        <a href="#" class="link">Доставка</a>
                     </div>
                     <div class="guarantee">
-                        <button class="guarantee_btn">
-                            <span class="guarantee__text">Гарантия</span>
-                        </button>
+                        <a href="#" class="link">Гарантия</a>
                     </div>
                     <div class="contact">
-                        <button class="contact_btn">
-                            <span class="contact__text">Контакты</span>
-                        </button>
+                        <a href="#" class="link">Контакты</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="slider">
+            <div class="slider__items">
+                <div class="slider__wrapper">
+                    <div class="slider__img">
+                        <img src='./images/slider-1.png' alt="img slider">
+                    </div>
+                </div>
+                <div class="slider__wrapper">
+                    <div class="slider__item">
+                        <div class="slider__decoration">
+                            <div class="slider__line">
+                            </div>
+                            <div class="slider__number"></div>
+                        </div>
+                        <div class="slider__description">
+                            <div class="slider__header">
+                                <h1>Делай селфи, <br>как Бен Стиллер!</h1>
+                            </div>
+                            <div class="slider__text">
+                                <p>
+                                    Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь
+                                    (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="slider__more">
+                            <a href="#" class="slider__link link">Подробнее</a>
+                        </div>
+                        <div class="slider__details"></div>
                     </div>
                 </div>
             </div>
         </div>
 
     </div>
+
+
 </body>
 
 </html>
