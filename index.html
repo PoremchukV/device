@@ -9,11 +9,7 @@
 </head>
 
 <body>
-
-
-
-
-    <div class="navigation container">
+    <div class="main container">
         <div class="logo">
             <a href="#"><img src="./images/logo.png" alt="Логотип"></a>
         </div>
@@ -24,16 +20,15 @@
                         <button class="btn__icon btn">
                             <img src="./images/search_button.png" alt="icon of search">
                         </button>
-                        <input type="text" name='search-btn' class="btn btn__text " placeholder="Поиск по сайту" />
+                        <input type="text" name='search-btn' class="input__field" placeholder="Поиск по сайту" />
                     </form>
                 </div>
                 <div class="catalog">
-                    <a href="" class="link">Каталог товаров</a>
-                    <span class="btn__icon">
-                        <a href="#" id="c-menu">
-                            <img src="./images/plus.png" alt="icon of cart">
-                        </a>
-                        <!-- <ul class="submenu container">
+                    <button class="catalog__submenu link">
+                        Каталог товаров <img src="./images/plus.png" alt="icon of cart">
+                    </button>
+                    <div class="submenu">
+                        <ul class="submenu__items">
                             <li class="submenu__item">
                                 <a href="#" class="submenu__link">Виртуальная реальность</a>
                             </li>
@@ -43,17 +38,21 @@
                             <li class="submenu__item">
                                 <a href="#" class="submenu__link">Экшн-камеры</a>
                             </li>
+                        </ul>
+                        <ul class="submenu__items">
                             <li class="submenu__item">
                                 <a href="#" class="submenu__link">Фитнес-браслеты</a>
                             </li>
                             <li class="submenu__item">
                                 <a href="#" class="submenu__link">Умные часы</a>
                             </li>
+                        </ul>
+                        <ul class="submenu__items">
                             <li class="submenu__item">
                                 <a href="#" class="submenu__link">Квадрокоптеры</a>
                             </li>
-                        </ul> -->
-                    </span>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <div class="menu__cell">
@@ -96,42 +95,218 @@
             </div>
         </div>
         <div class="slider">
-            <div class="slider__items">
-                <div class="slider__wrapper">
-                    <div class="slider__img">
-                        <img src='./images/slider-1.png' alt="img slider">
+            <div class="slider__wrapper">
+                <div class="slider__img">
+                    <img src='./images/slider-1.png' alt="img slider">
+                </div>
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <h1 class="slider__title">Делай селфи,<br> как Бен Стиллер!</h1>
+                    <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь
+                        (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+                </div>
+                <div class="slider__details">
+                    <div class="slider__link">
+                        <a href="#" class="link">Подробнее</a>
+                    </div>
+                    <div class="slider__btn">
+                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
                     </div>
                 </div>
-                <div class="slider__wrapper">
-                    <div class="slider__item">
-                        <div class="slider__decoration">
-                            <div class="slider__line">
-                            </div>
-                            <div class="slider__number"></div>
-                        </div>
-                        <div class="slider__description">
-                            <div class="slider__header">
-                                <h1>Делай селфи, <br>как Бен Стиллер!</h1>
-                            </div>
-                            <div class="slider__text">
-                                <p>
-                                    Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь
-                                    (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="slider__more">
-                            <a href="#" class="slider__link link">Подробнее</a>
-                        </div>
-                        <div class="slider__details"></div>
+                <div class="slider__feature">
+                    <div class="feature">
+                        <h2 class="feature__title"> 8,5 м</h2>
+                        <p class="feature__text">Длинна палки</p>
+                    </div>
+                    <div class="feature">
+                        <h2 class="feature__title"> 5 кг</h2>
+                        <p class="feature__text">Вес палки</p>
+                    </div>
+                    <div class="feature">
+                        <h2 class="feature__title"> Карбон</h2>
+                        <p class="feature__text">Материал</p>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__img">
+                    <img src='./images/slider-2.png' alt="img slider">
+                </div>
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <h1 class="slider__title">Худеем<br> правильно!</h1>
+                    <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать
+                        занятия и соблюдать диету.</p>
+                </div>
+                <div class="slider__details">
+                    <div class="slider__link">
+                        <a href="#" class="link">Подробнее</a>
+                    </div>
+                    <div class="slider__btn">
+                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
+                    </div>
+                </div>
+                <div class="slider__feature">
+                    <div class="feature">
+                        <h2 class="feature__title">48 часов</h2>
+                        <p class="feature__text">Без подзараядки</p>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__img">
+                    <img src='./images/slider-3.png' alt="img slider">
+                </div>
+            </div>
+            <div class="slider__wrapper">
+                <div class="slider__item">
+                    <h1 class="slider__title">Порхает как бабочка,<br>жалит как пчела!</h1>
+                    <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером,
+                        замаскированным под стандартную камеру.</p>
+                </div>
+                <div class="slider__details">
+                    <div class="slider__link">
+                        <a href="#" class="link">Подробнее</a>
+                    </div>
+                    <div class="slider__btn">
+                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
+                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
+                    </div>
+                </div>
+                <div class="slider__feature">
+                    <div class="feature">
+                        <h2 class="feature__title"> 800 м</h2>
+                        <p class="feature__text">Дальность полета</p>
+                    </div>
+                    <div class="feature">
+                        <h2 class="feature__title"> 50 метром</h2>
+                        <p class="feature__text">Радиус поражения</p>
+                    </div>
+
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div class="popular">
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-1.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Виртуальная <br>реальность</p>
+                </div>
+            </a>
+        </div>
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-2.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Моноподы <br>для селфи</p>
+                </div>
+            </a>
+        </div>
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-3.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Экшн-камеры</p>
+                </div>
+            </a>
+        </div>
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-4.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Фитнес-браслеты</p>
+                </div>
+            </a>
+        </div>
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-5.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Умные часы</p>
+                </div>
+            </a>
+        </div>
+        <div class="popular__cell">
+            <a href="#">
+                <div class="popular__img">
+                    <img src="./images/popular-6.png" class="img__centre" alt="">
+                </div>
+                <div class="popular__text">
+                    <p>Квадрокоптеры</p>
+                </div>
+            </a>
+        </div>
+
 
     </div>
-
-
+    <div class="services">
+        <div class="tabs__wrapper">
+            <div class="tabs__container">
+                <a href="#tab-1" class="tab tab-1">Доставка</a>
+                <a href="#tab-2" class="tab tab-2">Гарантия</a>
+                <a href="#tab-3" class="tab tab-3">Кредит</a>
+            </div>
+            <div id="tab-1" class="content content-1">
+                <div class="content__tabs">
+                    <div class="tabs__description">
+                        <div class="tabs__title">Доставка</div>
+                        <div class="tabs__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
+                            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</div>
+                    </div>
+                    <div class="tabs__img">
+                        <img src="./images/tabs-1.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="tab-2" class="content content-2">
+                <div class="content__tabs">
+                    <div class="tabs__description">
+                        <div class="tabs__title">Гарантия</div>
+                        <div class="tabs__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
+                            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</div>
+                    </div>
+                    <div class="tabs__img">
+                        <img src="./images/tabs-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="tab-3" class="content content-3">
+                <div class="content__tabs">
+                    <div class="tabs__description">
+                        <div class="tabs__title">Кредит</div>
+                        <div class="tabs__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
+                            вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.</div>
+                    </div>
+                    <div class="tabs__img">
+                        <img src="./images/tabs-3.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
