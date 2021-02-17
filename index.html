@@ -11,14 +11,14 @@
 <body>
     <div class="main container">
         <div class="logo">
-            <a href="#"><img src="./images/logo.png" alt="Логотип"></a>
+            <a href="#"><img src="./images/logo.png" alt="Изображение логотипа"></a>
         </div>
         <div class="menu">
             <div class="menu__cell">
                 <div class="search">
                     <form action="" method="GET" id="modal-search">
                         <button class="btn__icon btn">
-                            <img src="./images/search_button.png" alt="icon of search">
+                            <img src="./images/search_button.png" alt="Иконка поиска">
                         </button>
                         <input type="text" name='search-btn' class="input__field" placeholder="Поиск по сайту" />
                     </form>
@@ -60,7 +60,7 @@
                     <div class="account" id="modal-navigation">
                         <button class="btn">
                             <span class="btn__icon">
-                                <img src='./images/user.png' alt="icon of log in">
+                                <img src='./images/user.png' alt="Иконка входа в аккаунт">
                             </span>
                             <span class="btn__text">Войти</span>
                         </button>
@@ -68,14 +68,14 @@
                     <div class="compare">
                         <button class="btn">
                             <span class="btn__icon">
-                                <img src="./images/compare.png" alt="icon of compare">
+                                <img src="./images/compare.png" alt="Иконка сравнить товар">
                             </span>
                             <span class="btn__text">Сравнить</span></button>
                     </div>
                     <div class="cart">
                         <button class="btn">
                             <span class="btn__icon">
-                                <img src="./images/cart.png" alt="icon of cart">
+                                <img src="./images/cart.png" alt="Иконка корзины">
                             </span>
                             <span class="btn__text">Корзина</span>
                         </button>
@@ -97,11 +97,12 @@
         <div class="slider">
             <div class="slider__wrapper">
                 <div class="slider__img">
-                    <img src='./images/slider-1.png' alt="img slider">
+                    <img src='./images/slider-1.png' alt="Изображение слайдера">
                 </div>
             </div>
             <div class="slider__wrapper">
                 <div class="slider__item">
+                    <div class="slider__counter">01</div>
                     <h1 class="slider__title">Делай селфи,<br> как Бен Стиллер!</h1>
                     <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>Восемь
                         (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -110,11 +111,7 @@
                     <div class="slider__link">
                         <a href="#" class="link">Подробнее</a>
                     </div>
-                    <div class="slider__btn">
-                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                    </div>
+
                 </div>
                 <div class="slider__feature">
                     <div class="feature">
@@ -132,14 +129,15 @@
                 </div>
             </div>
         </div>
-        <!-- <div class="slider">
+        <div class="slider">
             <div class="slider__wrapper">
                 <div class="slider__img">
-                    <img src='./images/slider-2.png' alt="img slider">
+                    <img src='./images/slider-2.png' alt="Изображение слайдера">
                 </div>
             </div>
             <div class="slider__wrapper">
                 <div class="slider__item">
+                    <div class="slider__counter">02</div>
                     <h1 class="slider__title">Худеем<br> правильно!</h1>
                     <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы <br>не пропускать
                         занятия и соблюдать диету.</p>
@@ -148,11 +146,7 @@
                     <div class="slider__link">
                         <a href="#" class="link">Подробнее</a>
                     </div>
-                    <div class="slider__btn">
-                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                    </div>
+
                 </div>
                 <div class="slider__feature">
                     <div class="feature">
@@ -161,15 +155,16 @@
                     </div>
                 </div>
             </div>
-        </div> -->
-        <!-- <div class="slider">
+        </div>
+        <div class="slider">
             <div class="slider__wrapper">
                 <div class="slider__img">
-                    <img src='./images/slider-3.png' alt="img slider">
+                    <img src='./images/slider-3.png' alt="Изображение слайдера">
                 </div>
             </div>
             <div class="slider__wrapper">
                 <div class="slider__item">
+                    <div class="slider__counter">03</div>
                     <h1 class="slider__title">Порхает как бабочка,<br>жалит как пчела!</h1>
                     <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен <br>мощным лазером,
                         замаскированным под стандартную камеру.</p>
@@ -178,11 +173,7 @@
                     <div class="slider__link">
                         <a href="#" class="link">Подробнее</a>
                     </div>
-                    <div class="slider__btn">
-                        <input class="slider__nav" type="radio" name="slider" title="slide1" checked="checked" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                        <input class="slider__nav" type="radio" name="slider" title="slide2" />
-                    </div>
+
                 </div>
                 <div class="slider__feature">
                     <div class="feature">
@@ -196,13 +187,18 @@
 
                 </div>
             </div>
-        </div> -->
+        </div>
+        <div class="slider__dots">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
-    <div class="popular">
+    <div class="popular container">
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-1.png" class="img__centre" alt="">
+                    <img src="./images/popular-1.png" class="img__centre" alt="Изображение виртуальной реальности">
                 </div>
                 <div class="popular__text">
                     <p>Виртуальная <br>реальность</p>
@@ -212,7 +208,7 @@
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-2.png" class="img__centre" alt="">
+                    <img src="./images/popular-2.png" class="img__centre" alt="Изображение монопода для селфи">
                 </div>
                 <div class="popular__text">
                     <p>Моноподы <br>для селфи</p>
@@ -222,7 +218,7 @@
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-3.png" class="img__centre" alt="">
+                    <img src="./images/popular-3.png" class="img__centre" alt="Изображение экшн-камеры">
                 </div>
                 <div class="popular__text">
                     <p>Экшн-камеры</p>
@@ -232,7 +228,7 @@
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-4.png" class="img__centre" alt="">
+                    <img src="./images/popular-4.png" class="img__centre" alt="Изображение фитнес-браслета">
                 </div>
                 <div class="popular__text">
                     <p>Фитнес-браслеты</p>
@@ -242,7 +238,7 @@
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-5.png" class="img__centre" alt="">
+                    <img src="./images/popular-5.png" class="img__centre" alt="Изображение умных часов">
                 </div>
                 <div class="popular__text">
                     <p>Умные часы</p>
@@ -252,7 +248,7 @@
         <div class="popular__cell">
             <a href="#">
                 <div class="popular__img">
-                    <img src="./images/popular-6.png" class="img__centre" alt="">
+                    <img src="./images/popular-6.png" class="img__centre" alt="Изображение квадрокоптера">
                 </div>
                 <div class="popular__text">
                     <p>Квадрокоптеры</p>
@@ -262,51 +258,62 @@
 
 
     </div>
-    <div class="services">
-        <div class="tabs__wrapper">
-            <div class="tabs__container">
-                <a href="#tab-1" class="tab tab-1">Доставка</a>
-                <a href="#tab-2" class="tab tab-2">Гарантия</a>
-                <a href="#tab-3" class="tab tab-3">Кредит</a>
+    <div class="tab">
+        <div class="tab__wrapper container">
+            <div class="tab__button">
+                <button class="tab__links" onclick="service(event, 'delivery')" id="defaultOpen">
+                    <div class="link">Доставка</div>
+                </button>
+                <button class="tab__links" onclick="service(event, 'guarantee')">
+                    <div class="link">Гарантия</div>
+                </button>
+                <button class="tab__links" onclick="service(event, 'credit')">
+                    <div class="link">Кредит</div>
+                </button>
             </div>
-            <div id="tab-1" class="content content-1">
-                <div class="content__tabs">
-                    <div class="tabs__description">
-                        <div class="tabs__title">Доставка</div>
-                        <div class="tabs__text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
-                            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</div>
+            <div class="tab__content">
+                <div id="delivery" class="content _active">
+                    <div class="tab__content_text">
+                        <h3 class="content__text_title">Доставка</h3>
+                        <p class="content__text_paragraph">Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                            совершенно
+                            бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                     </div>
-                    <div class="tabs__img">
-                        <img src="./images/tabs-1.png" alt="">
+                    <div class="tab__content_img">
+                        <img src="./images/tabs-1.png" alt="Изображение для блока доставки товара">
                     </div>
                 </div>
-            </div>
-            <div id="tab-2" class="content content-2">
-                <div class="content__tabs">
-                    <div class="tabs__description">
-                        <div class="tabs__title">Гарантия</div>
-                        <div class="tabs__text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не
-                            переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</div>
+                <div id="guarantee" class="content">
+                    <div class="tab__content_text">
+                        <h3 class="content__text_title">Гарантия</h3>
+                        <p class="content__text_paragraph">Если из-за возгорания купленного у нас товара у вас
+                            сгорит<br>
+                            дом — не переживайте, мы выдадим
+                            вам
+                            новый.<br>Товар,
+                            не дом, конечно же.</p>
                     </div>
-                    <div class="tabs__img">
-                        <img src="./images/tabs-2.png" alt="">
+                    <div class="tab__content_img">
+                        <img src="./images/tabs-2.png" alt="Изображение для блока гарантии">
                     </div>
                 </div>
-            </div>
-            <div id="tab-3" class="content content-3">
-                <div class="content__tabs">
-                    <div class="tabs__description">
-                        <div class="tabs__title">Кредит</div>
-                        <div class="tabs__text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для
-                            вас наиболее выгодные  условия кредита. Выгодные для нашего банка, разумеется.</div>
+                <div id="credit" class="content">
+                    <div class="tab__content_text">
+                        <h3 class="content__text_title">Кредит</h3>
+                        <p class="content__text_paragraph">Залезть в долговую яму стало проще! Кредитные консультанты
+                            подберут для
+                            вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется</p>
                     </div>
-                    <div class="tabs__img">
-                        <img src="./images/tabs-3.png" alt="">
+                    <div class="tab__content_img">
+                        <img src="./images/tabs-3.png" alt="Изображение для блока кредит">
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <script src="./javascript/slider.js"></script>
+    <script src="./javascript/tabs.js"></script>
+
 </body>
 
 </html>
