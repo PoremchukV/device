@@ -1,14 +1,17 @@
 function service(evt, sName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("content");
+    let i, tabcontent, tabBtn;
+    tabcontent = document.getElementsByClassName("tab__section");
     for (i = 0; i < tabcontent.length; i++) {
       tabcontent[i].style.display = "none";
     }
-    tablinks = document.getElementsByClassName("tab__links");
-    for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    tabBtn = document.getElementsByClassName("tab__divider");
+    for (i = 0; i < tabBtn.length; i++) {
+      tabBtn[i].className = tabBtn[i].className.replace(" active", "");
     }
     document.getElementById(sName).style.display = "flex";
     evt.currentTarget.className += " active";
   }
   document.getElementById("defaultOpen").click();
+
+
+
